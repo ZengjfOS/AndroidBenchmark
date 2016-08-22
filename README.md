@@ -1,0 +1,2 @@
+# AndroidBenchmark
+这个项目拷贝0xbench而来，但是拷贝下来发现包名好像不对，修改几个包名才能正常运行，这个项目可以用来研究Android Benchmark的测试方法。
