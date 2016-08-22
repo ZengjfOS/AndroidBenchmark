@@ -1,0 +1,11 @@
+ant.properties
+proguard.cfg
+project.properties
+0xbench.keystore
+local.properties
+.*.swp
+.*.swo
+bin/
+gen/
+libs/
+obj/
