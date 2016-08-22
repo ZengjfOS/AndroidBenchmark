@@ -1,34 +1,11 @@
-0xbench
-=======
+# AndroidBenchmark
 
-0xBench is an open source Android app with a backend website developed in Java and C when interning at the start-up company 0xLab. Designed to be an open platform for benchmarking Android on the system level, 0xBench is now being used by major companies worldwide, and has been shipped with Texas Instrument’s devboards.
+这个项目拷贝[0xbench](https://code.google.com/archive/p/0xbench/)而来，但是拷贝下来发现有些包名好像不对，修改几个包名才能正常运行，这个项目可以用来研究Android Benchmark的测试方法。
 
-0xBench benchmarking results is cited in many Texas Instrument’s document pages, and in the following video you can also find 0xBench being used by Linaro to demo their system. 
+## 说明
 
+从[google仓库](https://code.google.com/archive/p/0xbench/)中下载了源代码，用ADT打开，发现很多地方包不正常，于是重新修改了包名，软件是能够正常运行的。
 
+## 软件运行情况
 
-0xbench, integrated Android benchmark suite by 0xlab
-
-0xlab integrates a series of benchmarks for Android system into the comprehensive benchmark suite, 0xbench.
-Key Feature
-
-    Full open source. License terms: Apache Software License (primary), CDDL (partial)
-    Comprehensive benchmarking: from system call (bionic) to Android frameworks
-    Community development process: accept open source contributions for benchmark items and reference results 
-
-Coverage
-
-    C library and system call
-    OpenGL|ES
-    2D canvas
-    Garbage collection in Dalvik
-    JavaScript? engine 
-
-    For detailed benchmark items, please check wiki: Benchmarks. 
-
-Use It
-
-    Download apk - Search 0xbench (zero-x-bench) on Android Market 
-
-    Check wiki WebService for uploading and browsing the benchmark results.
-    Check wiki Source for source code and build instructions. 
+![0xbench.png](image/0xbench.png)
