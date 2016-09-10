@@ -66,16 +66,22 @@ public class TesterArithmetic extends Tester {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // 从这可以看出，这里表示循环多少次
         int length = mRound;
         mInfo = new Bundle[length];
         for (int i = 0; i < length; i++) {
             mInfo[i] = new Bundle();
         }
 
+        // 显示提示，正在测试
         mTextView = new TextView(this);
         mTextView.setText("Running benchmark....");
         mTextView.setTextSize(mTextView.getTextSize() + 5);
+
+        // 仅仅现实一个TextView
         setContentView(mTextView);
+
+        // 开始测试
         startTester();
     }
 

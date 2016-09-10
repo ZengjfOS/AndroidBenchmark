@@ -25,6 +25,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 public class DrawCircle extends Tester {

@@ -33,13 +33,16 @@ import android.os.*;
 public abstract class Tester extends Activity {
     private String TAG;
     public final static String PACKAGE = "org.zeroxlab.benchmark";
+    // 线程里一共要循环多少次oneRound()
     int mRound;
+    // 线程里还剩循环了多少次oneRound()
     int mNow;
     int mIndex;
 
     protected long mTesterStart = 0;
     protected long mTesterEnd   = 0;
 
+    // 抽象方法，让子类实现，父类中调用，子类实现父类方法
     protected abstract String getTag();
     protected abstract int sleepBeforeStart();
     protected abstract int sleepBetweenRound();
@@ -93,7 +96,11 @@ public abstract class Tester extends Activity {
         }
     }
 
+    /**
+     * 该方法由子类调用
+     */
     protected void startTester() {
+        // 传入的时间函数由子类实现
         TesterThread thread = new TesterThread(sleepBeforeStart(), sleepBetweenRound());
         thread.start();
     }
@@ -110,8 +117,12 @@ public abstract class Tester extends Activity {
      * @param end The ending time of testing round
      */
     public void finishTester(long start, long end) {
+
+        // 记录测试的时间
         mTesterStart = start;
         mTesterEnd   = end;
+
+        // 设置参数
         Intent intent = new Intent();
         if (mSourceTag == null || mSourceTag.equals("")) {
             Case.putSource(intent, "unknown");
@@ -119,6 +130,7 @@ public abstract class Tester extends Activity {
             Case.putSource(intent, mSourceTag);
         }
 
+        // 设置参数
         Case.putIndex(intent, mIndex);
         saveResult(intent);
 
@@ -130,6 +142,8 @@ public abstract class Tester extends Activity {
      * Save the benchmarking result into intent
      * If this Case and Tester has their own way to pass benchmarking result
      * just override this method
+     *
+     * 保存运算消耗的时间
      *
      * @param intent The intent will return to Case
      */
@@ -151,10 +165,17 @@ public abstract class Tester extends Activity {
             mTesterEnd = SystemClock.uptimeMillis();
         }
         */
+
+        // 下一次还剩多少次
         mNow = mNow - 1;
+        // 下一次继续运行
         mNextRound = true;
     }
 
+    /**
+     * 如果mNow的次数少于等于0，则返回false表示测试结束了
+     * @return
+     */
     public boolean isTesterFinished() {
         return (mNow <= 0);
     }
@@ -171,6 +192,7 @@ public abstract class Tester extends Activity {
         }
 
         private void lazyLoop() throws Exception {
+            // 循环设定的mRound次数后退出
             while (!isTesterFinished()) {
                 if (mNextRound) {
                     mNextRound = false;
@@ -201,13 +223,19 @@ public abstract class Tester extends Activity {
 
         public void run() {
             try {
+                // 延时开始执行
                 sleep(mSleepingStart);
 
+                // 记录开始运行的时间
                 long start = SystemClock.uptimeMillis();
 
+                // 开始运行
                 lazyLoop();
 
+                // 记录结束运行的时间
                 long end = SystemClock.uptimeMillis();
+
+                // 测试结束
                 finishTester(start, end);
             } catch (Exception e) {
                     e.printStackTrace();

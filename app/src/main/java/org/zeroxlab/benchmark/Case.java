@@ -133,6 +133,7 @@ public abstract class Case {
         }
 
         Intent intent = new Intent();
+        // 这个地方很重要，根据前面传递的类名来生成对象
         intent.setClassName(PACKAGE, TESTER);
         Case.putRound(intent, mCaseRound);
         Case.putSource(intent, TAG);

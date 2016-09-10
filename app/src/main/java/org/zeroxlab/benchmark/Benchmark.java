@@ -607,6 +607,9 @@ public class Benchmark extends TabActivity implements View.OnClickListener {
      * @param v
      */
     public void onClick(View v) {
+
+        Log.e("Benchmark", "View");
+
         // 判断是那个按钮被按下了
         if (v == mRun) {
             // 用于统计多少个Checkbox被选中
@@ -657,7 +660,7 @@ public class Benchmark extends TabActivity implements View.OnClickListener {
     public void runCase(LinkedList<Case> list) {
         Case pointer = null;
 
-        // 检查是否需要结束
+        // 检查是否需要结束，同时忽略掉不需要测试的case
         boolean finish = true;
         for (int i = 0; i < list.size(); i++) {
             pointer = list.get(i);
@@ -667,6 +670,9 @@ public class Benchmark extends TabActivity implements View.OnClickListener {
             }
         }
 
+        /**
+         * 最后执行完了，统计所有的数据，并将数据以合理的形式现实出来。
+         */
         if (finish) {
 //            mBannerInfo.setText("Benchmarking complete.\nClick Show to upload.\nUploaded results:\nhttp://0xbenchmark.appspot.com");
             // 获取测试结果，并写入输出文件
@@ -826,7 +832,15 @@ public class Benchmark extends TabActivity implements View.OnClickListener {
 
         return result;
     }
-    
+
+    /**
+     * 当一个 runCase(mCases)创建的Acctivity运行完时，这个函数将被调用，并且会继续下一个
+     * 需要执行的Case，因为最后runCase(mCases)被调用了。
+     *
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (data == null) {
             Log.i(TAG, "oooops....Intent is null");

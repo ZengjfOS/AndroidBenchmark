@@ -37,6 +37,10 @@ public class LinpackLoop {
     }
 
     double second_orig = -1;
+    /**
+     * 统计时间,返回值是以秒来算
+     * @return
+     */
     double second() {
         if (second_orig==-1) {
             second_orig = System.currentTimeMillis();
@@ -45,9 +49,11 @@ public class LinpackLoop {
     }
 
     public String run_benchmark () {
+
         double a[][] = new double[200][201];
         double b[] = new double[200];
         double x[] = new double[200];
+
         double cray,ops,total,norma,normx;
         double resid,time;
         double kf;
@@ -112,6 +118,15 @@ public class LinpackLoop {
             "    Precision: " + eps_result);
     }
 
+    /**
+     * matrix generator
+     *
+     * @param a
+     * @param lda
+     * @param n
+     * @param b
+     * @return
+     */
     double matgen (double a[][], int lda, int n, double b[]) {
         double norma;
         int init, i, j;

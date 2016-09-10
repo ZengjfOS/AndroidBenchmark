@@ -39,6 +39,7 @@ public class CaseArithmetic extends Case {
     public static int Round  = 3;
 
     CaseArithmetic() {
+        // 初始化父类，设置：类名，测试名，重复次数等信息
         super("CaseArithmetic", "org.zeroxlab.benchmark.TesterArithmetic", Repeat, Round);
 
         mType = "mflops";
@@ -49,6 +50,7 @@ public class CaseArithmetic extends Case {
         };
         mTags = _tmp;
 
+        // 生成绑定对象
         generateInfo();
     }
 
