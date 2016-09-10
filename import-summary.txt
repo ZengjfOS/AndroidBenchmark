@@ -1,0 +1,219 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitignore
+* Android.mk
+* CHANGELOG
+* MODULE_LICENSE_APACHE2
+* NOTICE
+* README.md
+* build.properties
+* build.xml
+* default.properties
+* native/
+* native/Android.mk
+* native/iozone3_347/
+* native/iozone3_347/Android.mk
+* native/iozone3_347/Changes.txt
+* native/iozone3_347/Generate_Graphs
+* native/iozone3_347/Gnuplot.txt
+* native/iozone3_347/client_list
+* native/iozone3_347/fileop.c
+* native/iozone3_347/gengnuplot.sh
+* native/iozone3_347/gnu3d.dem
+* native/iozone3_347/gnuplot.dem
+* native/iozone3_347/gnuplotps.dem
+* native/iozone3_347/iozone.c
+* native/iozone3_347/iozone_visualizer.pl
+* native/iozone3_347/libasync.c
+* native/iozone3_347/libbif.c
+* native/iozone3_347/makefile
+* native/iozone3_347/pit_server.c
+* native/iozone3_347/read_telemetry
+* native/iozone3_347/report.pl
+* native/iozone3_347/spec.in
+* native/iozone3_347/write_telemetry
+* native/libMicro-0.4.0/
+* native/libMicro-0.4.0/Android.mk
+* native/libMicro-0.4.0/Makefile
+* native/libMicro-0.4.0/Makefile.Aix
+* native/libMicro-0.4.0/Makefile.Linux
+* native/libMicro-0.4.0/Makefile.SunOS
+* native/libMicro-0.4.0/Makefile.benchmarks
+* native/libMicro-0.4.0/Makefile.com
+* native/libMicro-0.4.0/OPENSOLARIS.LICENSE
+* native/libMicro-0.4.0/README
+* native/libMicro-0.4.0/_Android.mk
+* native/libMicro-0.4.0/_Executables.mk
+* native/libMicro-0.4.0/atomic.c
+* native/libMicro-0.4.0/bench.sh
+* native/libMicro-0.4.0/benchmark_fini.c
+* native/libMicro-0.4.0/benchmark_finibatch.c
+* native/libMicro-0.4.0/benchmark_finirun.c
+* native/libMicro-0.4.0/benchmark_finiworker.c
+* native/libMicro-0.4.0/benchmark_init.c
+* native/libMicro-0.4.0/benchmark_initbatch.c
+* native/libMicro-0.4.0/benchmark_initrun.c
+* native/libMicro-0.4.0/benchmark_initworker.c
+* native/libMicro-0.4.0/benchmark_optswitch.c
+* native/libMicro-0.4.0/benchmark_result.c
+* native/libMicro-0.4.0/bind.c
+* native/libMicro-0.4.0/cachetocache.c
+* native/libMicro-0.4.0/cascade_cond.c
+* native/libMicro-0.4.0/cascade_fcntl.c
+* native/libMicro-0.4.0/cascade_flock.c
+* native/libMicro-0.4.0/cascade_lockf.c
+* native/libMicro-0.4.0/cascade_mutex.c
+* native/libMicro-0.4.0/chdir.c
+* native/libMicro-0.4.0/close.c
+* native/libMicro-0.4.0/close_tcp.c
+* native/libMicro-0.4.0/connection.c
+* native/libMicro-0.4.0/dup.c
+* native/libMicro-0.4.0/elided.c
+* native/libMicro-0.4.0/exec.c
+* native/libMicro-0.4.0/exec_bin.c
+* native/libMicro-0.4.0/exit.c
+* native/libMicro-0.4.0/exp.c
+* native/libMicro-0.4.0/fcntl.c
+* native/libMicro-0.4.0/fcntl_ndelay.c
+* native/libMicro-0.4.0/file_lock.c
+* native/libMicro-0.4.0/fork.c
+* native/libMicro-0.4.0/getcontext.c
+* native/libMicro-0.4.0/getenv.c
+* native/libMicro-0.4.0/getpeername.c
+* native/libMicro-0.4.0/getpid.c
+* native/libMicro-0.4.0/getrusage.c
+* native/libMicro-0.4.0/getsockname.c
+* native/libMicro-0.4.0/gettimeofday.c
+* native/libMicro-0.4.0/isatty.c
+* native/libMicro-0.4.0/libmicro.c
+* native/libMicro-0.4.0/libmicro.h
+* native/libMicro-0.4.0/libmicro_main.c
+* native/libMicro-0.4.0/listen.c
+* native/libMicro-0.4.0/localtime_r.c
+* native/libMicro-0.4.0/log.c
+* native/libMicro-0.4.0/longjmp.c
+* native/libMicro-0.4.0/lrand48.c
+* native/libMicro-0.4.0/lseek.c
+* native/libMicro-0.4.0/malloc.c
+* native/libMicro-0.4.0/memcpy.c
+* native/libMicro-0.4.0/memmove.c
+* native/libMicro-0.4.0/memrand.c
+* native/libMicro-0.4.0/memset.c
+* native/libMicro-0.4.0/mk_tarball
+* native/libMicro-0.4.0/mktime.c
+* native/libMicro-0.4.0/mmap.c
+* native/libMicro-0.4.0/mprotect.c
+* native/libMicro-0.4.0/msync.c
+* native/libMicro-0.4.0/multiview.sh
+* native/libMicro-0.4.0/munmap.c
+* native/libMicro-0.4.0/mutex.c
+* native/libMicro-0.4.0/nop.c
+* native/libMicro-0.4.0/open.c
+* native/libMicro-0.4.0/pipe.c
+* native/libMicro-0.4.0/poll.c
+* native/libMicro-0.4.0/pread.c
+* native/libMicro-0.4.0/pthread_create.c
+* native/libMicro-0.4.0/pwrite.c
+* native/libMicro-0.4.0/read.c
+* native/libMicro-0.4.0/realpath.c
+* native/libMicro-0.4.0/recurse.c
+* native/libMicro-0.4.0/recurse2.c
+* native/libMicro-0.4.0/select.c
+* native/libMicro-0.4.0/semop.c
+* native/libMicro-0.4.0/setcontext.c
+* native/libMicro-0.4.0/setsockopt.c
+* native/libMicro-0.4.0/sigaction.c
+* native/libMicro-0.4.0/siglongjmp.c
+* native/libMicro-0.4.0/signal.c
+* native/libMicro-0.4.0/sigprocmask.c
+* native/libMicro-0.4.0/socket.c
+* native/libMicro-0.4.0/socketpair.c
+* native/libMicro-0.4.0/stat.c
+* native/libMicro-0.4.0/strcasecmp.c
+* native/libMicro-0.4.0/strchr.c
+* native/libMicro-0.4.0/strcmp.c
+* native/libMicro-0.4.0/strcpy.c
+* native/libMicro-0.4.0/strftime.c
+* native/libMicro-0.4.0/strlen.c
+* native/libMicro-0.4.0/strtol.c
+* native/libMicro-0.4.0/system.c
+* native/libMicro-0.4.0/tattle.c
+* native/libMicro-0.4.0/time.c
+* native/libMicro-0.4.0/times.c
+* native/libMicro-0.4.0/wrapper.sh
+* native/libMicro-0.4.0/write.c
+* native/libMicro-0.4.0/writev.c
+* native/unixbench-5.1.2/
+* native/unixbench-5.1.2/Android.mk
+* native/unixbench-5.1.2/Makefile
+* native/unixbench-5.1.2/README
+* native/unixbench-5.1.2/Run
+* native/unixbench-5.1.2/USAGE
+* native/unixbench-5.1.2/WRITING_TESTS
+* native/unixbench-5.1.2/_Android.mk
+* native/unixbench-5.1.2/_Android_NoClear.mk
+* native/unixbench-5.1.2/pgms/
+* native/unixbench-5.1.2/pgms/gfx-x11
+* native/unixbench-5.1.2/pgms/index.base
+* native/unixbench-5.1.2/pgms/multi.sh
+* native/unixbench-5.1.2/pgms/tst.sh
+* native/unixbench-5.1.2/pgms/unixbench.logo
+* native/unixbench-5.1.2/src/
+* native/unixbench-5.1.2/src/arith.c
+* native/unixbench-5.1.2/src/big.c
+* native/unixbench-5.1.2/src/context1.c
+* native/unixbench-5.1.2/src/dhry.h
+* native/unixbench-5.1.2/src/dhry_1.c
+* native/unixbench-5.1.2/src/dhry_2.c
+* native/unixbench-5.1.2/src/dummy.c
+* native/unixbench-5.1.2/src/execl.c
+* native/unixbench-5.1.2/src/fstime.c
+* native/unixbench-5.1.2/src/hanoi.c
+* native/unixbench-5.1.2/src/looper.c
+* native/unixbench-5.1.2/src/pipe.c
+* native/unixbench-5.1.2/src/socket.c
+* native/unixbench-5.1.2/src/spawn.c
+* native/unixbench-5.1.2/src/syscall.c
+* native/unixbench-5.1.2/src/time-polling.c
+* native/unixbench-5.1.2/src/timeit.c
+* native/unixbench-5.1.2/src/ubgears.c
+* native/unixbench-5.1.2/src/whets.c
+* native/unixbench-5.1.2/testdir/
+* native/unixbench-5.1.2/testdir/cctest.c
+* native/unixbench-5.1.2/testdir/dc.dat
+* native/unixbench-5.1.2/testdir/large.txt
+* native/unixbench-5.1.2/testdir/sort.src
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets/
+* jni/ => app/src/main/jni/
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+* src/jnt/scimark2/README => app/src/main/resources/jnt/scimark2/README
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
